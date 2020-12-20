@@ -2,8 +2,71 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 100vw;
-  .navbar{
-    border: 1px solid black;
+  width: 50vw;
+  margin: 0 auto;
+  padding: 2rem;
+  color: black;
+  list-style-type: none;
+  li{
+    font-size: 1.2rem;
   }
+  :hover{
+    color: #5F0080;
+    cursor: pointer;
+  }
+
+  // .navbar{
+  //   float: right;
+  //   background: url(https://res.kurly.com/pc/service/common/1902/line_1x11_c_ccc.png) no-repeat 100% 23px;
+  // }
+
+  .dropdowntest{
+
+    :hover .dropdown{
+      position: absolute;
+      // z-index: 1;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      width: 1em;
+
+      border: 1px solid black;
+
+      list-style-type: none;
+      color: #5F0080;
+      }
+  }
+  .category{
+    .dropdown{
+      display: none;
+    }
+  }
+  
+}
+
+.cateogry-menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.hamburger-menu-icon{
+  height:1em;
+  width: 1em;
+}
+
+.category-text{
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+   box-sizing: border-box; 
+  // padding: 0 0 10px 0;
+}
+
+.search-bar{
+  // border-radius: 10%;
+  //change this later to a rounder search box
+}
+
+a, a:visited, a:hover, a:active {
+  color: #5F0080;
 }

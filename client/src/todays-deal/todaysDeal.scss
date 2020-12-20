@@ -1,0 +1,25 @@
+.todays-deal{
+  width: 80vw;
+  margin: 0 auto;
+  text-align: center;
+
+  h2{
+    margin: 1rem 0 0 0;
+  }
+  
+}
+
+.todays-deal-image{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80vw;
+  margin: 2rem 0;
+
+  img{
+    height: 20em;
+    width: 20em;
+  }
+
+}
