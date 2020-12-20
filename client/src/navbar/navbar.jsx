@@ -1,6 +1,7 @@
 import React from 'react';
 import './navbar.scss'
-import CategoryDropdown from './dropdown';
+import {HiMenu} from 'react-icons/hi';
+import {AiOutlineShoppingCart} from 'react-icons/ai';
 
 // Category is going to another component
 // All of them should have an onclick event
@@ -8,26 +9,43 @@ import CategoryDropdown from './dropdown';
 export default function NavBar(props){
   return (
     <>
-      <div className='nav'>
-        <CategoryDropdown className='navbar test'>
-        </CategoryDropdown>
-        <div className='navbar'>
+      <ul className='nav'>
+        <li className='dropdowntest'>
+          <div className='category'>
+            <div className='cateogry-menu'>
+              <HiMenu className="hamburger-menu-icon"/>
+              <div className="category-text">
+                Categories
+              </div>
+            </div>
+            <ul className='dropdown'>
+              <li href='/'>test1</li>
+              <li href='/'>test2</li>
+            </ul>
+          </div>
+        </li>
+        <li>
           New Product
-        </div>
-        <div className='navbar'>
+        </li>
+        <li>
           Best Seller
-        </div>
-        <div className='navbar'>
+        </li>
+        <li>
           Sale
-        </div>
-        <div className='navbar'>
-          search bar
-        </div>
-        <div className='navbar'>
-          cart
-        </div>  
-      </div>
-      <h1>how does hover affect this</h1>  
+        </li>
+        <li>
+          <form>
+            <input
+              type="text" 
+              placeholder='Search...' 
+              name="search"
+              className="search-bar"></input>
+          </form>
+        </li>
+        <li>
+          <AiOutlineShoppingCart/>
+        </li>  
+      </ul>
     </>
 
   )
